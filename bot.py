@@ -27,7 +27,6 @@ auth.set_access_token(
 
 # INITIALIZE
 api = tweepy.Client(
-    bearer_token=BEARER_TOKEN,
     access_token=ACCESS_TOKEN,
     access_token_secret=ACCESS_TOKEN_SECRET,
     consumer_key=API_KEY,
