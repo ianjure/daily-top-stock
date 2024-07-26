@@ -34,5 +34,5 @@ api = tweepy.Client(
 )
 
 # POST TO TWITTER
-tweet = result
+#tweet = result
 post_result = api.create_tweet(text="pls work!")
