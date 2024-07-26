@@ -1,4 +1,4 @@
-name: run app.py
+name: daily-top-stock
 
 on:
   schedule:
