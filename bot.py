@@ -95,4 +95,4 @@ api = tweepy.Client(
 
 # POST TO TWITTER
 tweet = result
-post_result = api.create_tweet(text=tweet)
+post_result = api.create_tweet(text="test!")
