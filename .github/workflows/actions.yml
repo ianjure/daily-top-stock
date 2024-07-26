@@ -22,7 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: execute py script # run app.py
+      - name: run daily-top-stock
         env:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_ID_SECRET: ${{ secrets.CLIENT_ID_SECRET }}
