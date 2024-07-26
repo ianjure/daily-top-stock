@@ -77,12 +77,14 @@ API_KEY = os.environ["API_KEY"]
 API_KEY_SECRET = os.environ["API_KEY_SECRET"]
 BEARER_TOKEN = os.environ["BEARER_TOKEN"]
 
-# AUTHENTICATION
+# AUTHENTICATION - WILL RESULT IN A 401 ERROR
+"""
 auth = tweepy.OAuthHandler(API_KEY, API_KEY_SECRET)
 auth.set_access_token(
     ACCESS_TOKEN,
     ACCESS_TOKEN_SECRET,
 )
+"""
 
 # INITIALIZE
 api = tweepy.Client(
@@ -95,4 +97,4 @@ api = tweepy.Client(
 
 # POST TO TWITTER
 tweet = result
-post_result = api.create_tweet(text="test!")
+post_result = api.create_tweet(text="pls work!")
