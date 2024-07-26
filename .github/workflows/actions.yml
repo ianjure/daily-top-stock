@@ -2,7 +2,7 @@ name: daily-top-stock
 
 on:
   schedule:
-    - cron: '*/2 * * * *' # At 05:00 AM Everyday
+    - cron: '*/5 * * * *' # At 05:00 AM Everyday
 
 jobs:
   build:
@@ -31,4 +31,4 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
           API_KEY_SECRET: ${{ secrets.API_KEY_SECRET }}
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
-        run: python app.py
+        run: python bot.py
