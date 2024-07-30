@@ -2,7 +2,7 @@ name: daily-top-stock
 
 on:
   schedule:
-    - cron: '30 12 * * 2-6' # At 12:30 AM UTC / 8:30 AM PH Every Tuesday to Saturday
+    - cron: '0 1 * * 2-6' # At 12:30 AM UTC / 8:30 AM PH Every Tuesday to Saturday
 
 jobs:
   build:
